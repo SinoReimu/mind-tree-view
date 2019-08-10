@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <cn.tecotaku.mindtree.core.view.TreeView
+        android:id="@+id/edit_map_tree_view"
+        android:background="@drawable/box"
+        android:layout_width="200dp"
+        android:layout_height="400dp"/>
+
+
+</LinearLayout>
