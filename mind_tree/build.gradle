@@ -1,9 +1,8 @@
 apply plugin: 'com.android.library'
+apply plugin: "guru.stefma.bintrayrelease"
 
 android {
     compileSdkVersion 28
-
-
 
     defaultConfig {
         minSdkVersion 15
@@ -22,6 +21,21 @@ android {
         }
     }
 
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+
+version = "1.0.0"
+group = "cn.tecotaku"
+androidArtifact { // 2
+    artifactId = "mind_tree"
+}
+publish {
+    userOrg = 'ahakurei'
+    desc = 'a library for making mind tree view easiler'
+    website = 'https://github.com/SinoReimu/mind-tree-view'
 }
 
 dependencies {
